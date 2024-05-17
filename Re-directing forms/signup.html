@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        fieldset {
+            text-align: center;
+            padding: 50px;
+            border-radius: 50px;
+            border-width: 10px;
+            width: 500px;
+            background-color: rgb(213, 221, 232);
+            font-size: larger;
+            border-color: rgb(8, 37, 111);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input {
+            width: 250px;
+            height: 25px;
+            border-radius: 8px;
+            border-color: rgb(135, 135, 206);
+            display: inline-block; 
+        }
+
+        form {
+            margin-left: 33%;
+            margin-top: 110px;
+        
+        }
+        h2 {
+            color: rgb(99, 99, 175);
+            font-size: 50px;
+        }
+        p {
+            background-color: rgb(192, 215, 239);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 10%;
+        }
+        label {
+            font-weight: bold;
+            color: rgb(252, 107, 107);
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="./login.html"> 
+        <fieldset>
+            <h2><u>Sign-up</u></h2> 
+            <p>To create your account with us. Please enter your details</p>
+            <br><br>
+            <label for="username">
+                <text>🧑🏻Username:</text> <input type="text"
+                                        name="username"
+                                        id="username"
+
+                                        required>
+            </label>
+            <br><br>
+            <label for="emil">
+                📧Email:  <input type="email"
+                                        name="mailid"
+                                        id="mailid"
+                                        required
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"> 
+                                        
+            </label>
+            <br><br>
+            <label for="pwd">
+                🔑Password: <input type="password" 
+                                        name="password"
+                                        id="password"
+                                        pattern="[A-Za-z0-9]{8,}"
+                                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                        required>
+            </label><br><br>
+            <label for="pwd">
+                🔑Re-Enter Password: <input type="password"
+                                                name="password"
+                                                id="password"
+                                                pattern="[A-Za-z0-9]{8,}"
+                                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                                                required>
+            </label>
+            <br><br>
+            <label for="tel">
+                📞Phone Number <input type="number"
+                                    name="pnum"
+                                    id="pnum"
+                                    required
+                                    pattern="[0-9]{10}"
+                                    title="Enter (0-9) only 10 Charcters">
+            </label>
+                    <br><br><br><br>
+                            <label for="submit">
+                                                <input type="submit" 
+                                                name="submit" 
+                                                id="submit" 
+                                                style="color: red; 
+                                                background-color: whitesmoke;
+                                                width: 150px;
+                                                height: 30px;
+                                                border-radius: 60px;
+                                                font-weight: bold;
+                                                font-size: large;                                               
+                                                border-color: blue">
+                            </label>
+            <br><br>
+        </fieldset>      
+    </form>
+</body>
+</html>

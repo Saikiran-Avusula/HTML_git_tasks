@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        fieldset {
+            text-align: center;
+            padding: 40px;
+            border-radius: 50px;
+            border-width: 15px;
+            width: 350px;
+            background-color: rgb(213, 221, 232);
+            font-size: larger;
+            border-color: rgb(8, 37, 111);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form {
+            margin-left: 38%;
+            margin-top: 10%
+        
+        }
+        input {
+            width: 150px;
+            height: 25px;
+            border-radius: 8px;
+            border-color: rgb(135, 135, 206); 
+        }
+        .submit {
+            color: red;
+            background-color: whitesmoke;
+                width: 150px;
+                height: 30px;
+                border-radius: 70px;
+                font-weight: bold;
+                font-size: large;                                               
+               
+        }
+
+        .reset {
+            background-color: whitesmoke;
+                width: 150px;
+                color: red;
+                height: 30px;
+                border-radius: 70px;
+                font-weight: bold;
+                font-size: large;                                               
+        
+        }
+        h2 {
+            color: rgb(99, 99, 175);
+            font-size: 40px; }
+      
+    </style>
+</head>
+<body>
+     <form >
+        <fieldset>
+            <h2><u>Log-In</u></h2>
+            <br>
+            <br>
+            <label for="username">
+                🧑🏻Username: <input type="text"
+                                name="username"
+                                id="username"
+                                required
+                                placeholder="Enter your username"
+                                pattern="[A-za-z0-9].{8,}"
+                                title="enter 8 Charcters included"   >                 
+            </label> <br><br><br>
+            <label for="username">
+                🔑Password: <input type="text"
+                                name="username"
+                                id="username"
+                                required
+                                placeholder="Enter your password"
+                                pattern="[A-Za-z0-9]{8,}"
+                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" > 
+            
+
+                                
+            </label>
+            <br><br><br><br>
+           
+            </label>
+            <label for="submit">
+                <input class="submit" type="submit" id="submit" name="submit" formaction="../Resume(Day 1).html">
+            </label>
+            <label for="reset">
+                <input class="reset" type="reset" id="reset" name="reset">
+            </label> <br><br>
+            <label for="createa/c">
+                <a href="./signup.html">Create New account (Sign-up)</a>
+            </label>
+            <br> <br>
+            <label for="createa/c">
+                <a href="./fgpassword.html">Forgot Password</a>
+            </label>
+            <br>
+            <br>
+          
+
+
+
+
+        </fieldset>        
+    </form> 
+</body>
+</html>
