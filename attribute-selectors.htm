@@ -1,0 +1,115 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 1em;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      .container {
+        max-width: 100%;
+        margin: 40px auto;
+        padding: 25px;
+        background-color: #323030;
+        border: 1px solid #ddd;
+        border-radius: 1em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+      }
+      input,
+      textarea {
+        font-size: 1.5em;
+        border-radius: 5em;
+        padding: 10px;
+      }
+
+      label {
+        color: orange;
+        font-size: 1.5em;
+      }
+      input[type="submit"] {
+        color: white;
+        background-color: orange;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- create a job recuritement form for candidates from campus -->
+    <form action="/submit" method="post" class="container">
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        size="10"
+        required
+        placeholder="Enter your name"
+      /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="abc@gmail.com"
+      /><br />
+
+      <label for="phone">Phone:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        placeholder="+91 XXXXX XXXXX"
+      /><br />
+
+      <label for="jobtitle">Job Title:</label><br />
+      <input type="text" id="jobtitle" name="jobtitle" required /><br />
+
+      <label for="jobdescription">Job Description:</label><br />
+      <textarea id="jobdescription" name="jobdescription" required></textarea
+      ><br />
+
+      <label for="requirements">Requirements:</label><br />
+      <textarea id="requirements" name="requirements" required></textarea><br />
+
+      <label for="responsibilities">Responsibilities:</label><br />
+      <textarea
+        id="responsibilities"
+        name="responsibilities"
+        required
+      ></textarea
+      ><br />
+
+      <label for="experience">Experience:</label><br />
+      <input type="number" id="experience" name="experience" required /><br />
+
+      <label for="education">Education:</label><br />
+      <input type="text" id="education" name="education" required /><br />
+
+      <label for="skills">Skills:</label><br />
+      <input type="text" id="skills" name="skills" required /><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
